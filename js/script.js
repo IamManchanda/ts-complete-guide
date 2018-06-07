@@ -89,3 +89,6 @@ var canThisBeAny = null;
 console.log(canThisBeAny);
 canThisBeAny = 12;
 console.log(canThisBeAny);
+var anything;
+anything = 12;
+//# sourceMappingURL=script.js.map
