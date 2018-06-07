@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "serve:dev": "lite-server",
+    "compile": "tsc --watch",
     "start": "yon serve:dev"
   },
   "dependencies": {},
