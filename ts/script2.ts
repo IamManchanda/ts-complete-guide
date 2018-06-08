@@ -1,13 +1,8 @@
+// Inheritance
 class Person {
-  public name: string;
-  public username: string
+  public constructor(public name: string, public username: string) {};
   private type: string;
   protected age: number;
-
-  constructor(name: string, username: string) {
-    this.name = name;
-    this.username = username;
-  };
 
   public printAge(age: number = 0) {
     this.age = age;
@@ -22,7 +17,7 @@ class Person {
 };
 
 class Harry extends Person {  
-  constructor(username: string, age: number) {
+  public constructor(username: string, age: number) {
     super('Harman Manchanda', username);
     this.age = age;
   };
