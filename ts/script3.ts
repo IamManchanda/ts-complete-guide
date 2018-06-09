@@ -11,7 +11,7 @@ class Plant {
   }
 };
 
-const plant: Plant = new Plant();
+const plant = new Plant();
 console.log(plant.species);
 
 plant.species = 'AB';
