@@ -1,18 +1,17 @@
 "use strict";
 var myMath;
 (function (myMath) {
-    var Rectangle;
+    let Rectangle;
     (function (Rectangle) {
-        Rectangle.calculateRectangle = function (width, height) {
-            if (height === void 0) { height = width; }
+        Rectangle.calculateRectangle = (width, height = width) => {
             return width * height;
         };
     })(Rectangle = myMath.Rectangle || (myMath.Rectangle = {}));
     ;
-    var Circle;
+    let Circle;
     (function (Circle) {
-        Circle.calculateCircumference = function (diameter) {
-            var PI = 3.14;
+        Circle.calculateCircumference = (diameter) => {
+            const PI = 3.14;
             return diameter * PI;
         };
     })(Circle = myMath.Circle || (myMath.Circle = {}));

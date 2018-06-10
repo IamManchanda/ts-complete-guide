@@ -1,25 +1,20 @@
 "use strict";
 // Getters & Setters
-var Plant = /** @class */ (function () {
-    function Plant() {
+class Plant {
+    constructor() {
         this._species = 'Default';
     }
-    Object.defineProperty(Plant.prototype, "species", {
-        get: function () {
-            return this._species;
-        },
-        set: function (value) {
-            if (value.length >= 3) {
-                this._species = value;
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    return Plant;
-}());
+    get species() {
+        return this._species;
+    }
+    set species(value) {
+        if (value.length >= 3) {
+            this._species = value;
+        }
+    }
+}
 ;
-var plant = new Plant();
+const plant = new Plant();
 console.log(plant.species);
 plant.species = 'AB';
 console.log(plant.species);
