@@ -1,11 +1,43 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
+;
+var greet = function (person) {
+    console.log("Hello, " + person.firstname + ".\nWe got to know that you are " + (person.age || 24) + " years old");
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var rectangle_1 = __importDefault(require("./rectangle"));
-var circle_1 = __importDefault(require("./circle"));
-console.log(rectangle_1.default(10));
-console.log(rectangle_1.default(10, 20));
-console.log(circle_1.default(10));
+var harry = {
+    firstname: 'Harry',
+    age: 25,
+    greetBack: function (lastname) {
+        console.log("Greetings! Yup this is " + this.firstname + " " + lastname);
+    },
+};
+greet(harry);
+harry.greetBack('Manchanda');
+// Classes
+var Person = /** @class */ (function () {
+    function Person() {
+    }
+    Person.prototype.greetBack = function (lastname) {
+        console.log("Greetings! Yup this is " + this.firstname + " " + lastname);
+    };
+    ;
+    return Person;
+}());
+;
+var myPerson = new Person();
+myPerson.firstname = 'Harman';
+myPerson.greetBack('Singh');
+;
+var myDouble = function (value1, value2) {
+    return (value1 + value2) * 2;
+};
+console.log(myDouble(10, 20));
+;
+var oldPerson = {
+    firstname: 'Donald Trump',
+    age: 71,
+    greetBack: function (lastname) {
+        console.log('Hello');
+    },
+};
+console.log(oldPerson);
 //# sourceMappingURL=app.js.map
