@@ -1,4 +1,7 @@
 SystemJS.config({
+  map: {
+    '$': 'node_modules/jquery/dist/jquery.min.js',
+  },
   baseURL: '/',
   packages: {
       '/': {

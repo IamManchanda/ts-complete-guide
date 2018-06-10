@@ -9,9 +9,11 @@
     "start": "yon serve:dev"
   },
   "dependencies": {
+    "jquery": "^3.3.1",
     "systemjs": "^0.21.4"
   },
   "devDependencies": {
+    "@types/jquery": "^3.3.2",
     "lite-server": "^2.3.0",
     "yarn-or-npm": "^2.0.4"
   }
