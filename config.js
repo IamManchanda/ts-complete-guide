@@ -7,4 +7,5 @@ SystemJS.config({
   },
 });
 
-SystemJS.import('js/app.js');
+/* SystemJS.import('js/app.js'); */
+SystemJS.import('js/challenge.js');
