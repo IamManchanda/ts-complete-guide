@@ -7,4 +7,3 @@ $('#app').css({
     fontSize: '130%',
     padding: '1.3rem',
 });
-//# sourceMappingURL=app.js.map
